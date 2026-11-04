@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#1A1D21] text-[#D1D2D3] font-sans antialiased;
+  }
+}
+
+/* Custom Slack-style Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3f4246;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #56585d;
+}
+
+/* Message hover highlight */
+.message-row:hover .message-actions {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Code block formatting */
+pre {
+  background-color: #222529 !important;
+  border: 1px solid #383a40;
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  overflow-x: auto;
+}
+
+code {
+  font-family: 'JetBrains Mono', monospace;
+  background-color: #2b2d31;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.85em;
+  color: #e0e1e6;
+}
