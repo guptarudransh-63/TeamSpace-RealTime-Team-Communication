@@ -1,3 +1,4 @@
+process.env.AWS_EC2_METADATA_DISABLED = 'true';
 import http from 'http';
 import dotenv from 'dotenv';
 dotenv.config();
